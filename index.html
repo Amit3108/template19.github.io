@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Template 19-Amit Naik</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="temp19.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+  <script>
+    const container = document.querySelector('.stars');
+    const items = container.querySelectorAll('.stars-item');
+
+    container.onclick = e =>{
+      const elClass = e.target.classList;
+      if(!elClass.contains('active')){
+        items.foreach(
+          item => item.classList.remove('active')
+        );
+        elClass.add('active');
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <div class="menu">
+    <div class="menu1">
+        
+        <ul class='menu1a'>
+            <li><a class="head1-link" href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a class="head1-link" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="head1-link" href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a class="head1-link" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            <li><a class="head1-link" href="#"><i class="fab fa-youtube"></i></a></li>  
+            
+        </ul>
+        
+    
+    <h4 class="header1">
+  <div><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<button class="div">0</button></div>
+        <div><i class="fas fa-caret-right"></i>&nbsp;&nbsp;&nbsp;REGISTER</div>
+        <div><i class="fas fa-caret-right"></i>&nbsp;&nbsp;&nbsp;LOGIN</div>
+    </h4>
+    
+</div>
+
+<div class="menu2">
+    <nav class="contentnav">
+        <h2 class="header2"><img src="logo.png"  class="logo1"></h2>
+        <ul class='header2-menu'>
+                    
+                   <li><a class="head2-link" href="#"><b>HOMES</b></a></li>
+                   <li><a class="head2-link" href="#"><b>SEARCH</b> <i class="fas fa-angle-down"></i></a></li>
+                   <li><a class="head2-link" href="#"><b>COMPARE</b> <i class="fas fa-angle-down"></i></a></li>
+                   <li><a class="head2-link" href="#"><b>REVIEWS</b> <i class="fas fa-angle-down"></i></a></li>
+                   <li><a class="head2-link" href="#"><b>SERVICES</b> <i class="fas fa-angle-down"></i></a></li>
+                   <li><a class="head2-link" href="#"><b>PAGES</b> <i class="fas fa-angle-down"></i></a></li>
+                   <li><a class="head2-link" href="#"><b>USERS</b> <i class="fas fa-angle-down"></i></a></li>
+        </ul>
+    </nav>
+    <button class="settings"><i class="fas fa-cog"></i></button>
+</div>
+
+<div class="home">
+  <div class="home-content">
+    <h3 style="font-size: 22px;"><b>BEST SHOP FOR CAR PARTS</b></h3>
+    <div class="every"><h1 style="font-size: 42px;" >EVERY THING YOU WANT</h1></div>
+    <h4 style="font-size: 16px;">We provide always best services for our clients and always</h4>
+    <h4 style="font-size: 16px;">try to achieve our client's trust and satisfication.</h4>
+    <button>SHOP NOW&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-circle-right"></i></button>
+  </div>
+  
+</div>
+<div class="access">
+  <div class="acctitle"><h2>Car <span style="color: red;">Accessories</span></h2><hr style="background: black;" class="hr1"><hr class="hr2">
+  <p style="color: rgb(94, 94, 94);">Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico ut debet<br>consecutur</p></div>
+  <div class="list1">
+    <div class="list-item">
+      <img src="images/steering.png">
+      <div>
+      <h4><b>Steering</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 15.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/cardoor.png">
+      <div>
+      <h4><b>Car doors</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 12.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/gears.png">
+      <div>
+      <h4><b>Gears</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 30.00- &#163; 35.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/multimedia.jpg">
+      <div>
+      <h4><b>Multimedia</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 25.00</h5>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="list2">
+  <div class="list-item">
+    <img src="images/keychain.jpg">
+    <div>
+    <h4><b>Stylish Key</b></h4>
+    <ul class="stars">
+      <li class="stars-item active" data-rate="1"></li>
+      <li class="stars-item" data-rate="2"></li>
+      <li class="stars-item" data-rate="3"></li> 
+      <li class="stars-item" data-rate="4"></li>
+      <li class="stars-item" data-rate="5"></li>
+      <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+    </ul>
+    <h5>&#163; 20.00</h5>
+  </div>
+  </div>
+  <div class="list-item">
+    <img src="images/sound.jpg">
+    <div>
+    <h4><b>Sound System</b></h4>
+    <ul class="stars">
+      <li class="stars-item active" data-rate="1"></li>
+      <li class="stars-item" data-rate="2"></li>
+      <li class="stars-item" data-rate="3"></li> 
+      <li class="stars-item" data-rate="4"></li>
+      <li class="stars-item" data-rate="5"></li>
+      <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+    </ul>
+    <h5>&#163; 30.00</h5>
+  </div>
+  </div>
+  <div class="list-item">
+    <img src="images/engine.jpg">
+    <div>
+    <h4><b>Diesel Engine</b></h4>
+    <ul class="stars">
+      <li class="stars-item active" data-rate="1"></li>
+      <li class="stars-item" data-rate="2"></li>
+      <li class="stars-item" data-rate="3"></li> 
+      <li class="stars-item" data-rate="4"></li>
+      <li class="stars-item" data-rate="5"></li>
+      <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+    </ul>
+    <h5>&#163; 7.00</h5>
+  </div>
+  </div>
+  <div class="list-item">
+    <img src="images/filters.png">
+    <div>
+    <h4><b>Filters</b></h4>
+    <ul class="stars">
+      <li class="stars-item active" data-rate="1"></li>
+      <li class="stars-item" data-rate="2"></li>
+      <li class="stars-item" data-rate="3"></li> 
+      <li class="stars-item" data-rate="4"></li>
+      <li class="stars-item" data-rate="5"></li>
+      <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+    </ul>
+    <h5>&#163; 7.00</h5>
+  </div>
+  </div>
+</div>
+<div class="numbers">
+  <div class="num-item">
+    <h1><i class="fas fa-car-side"></i></h1>
+    <h1>1238</h1>
+    <h4>Total <span style="color: red;">Accessories</span></h4>
+  </div>
+  <div class="num-item" >
+    <h1><i class="fas fa-tools"></i></h1>
+    <h1>820</h1>
+    <h4>Spare <span style="color: red;">Parts</span></h4>
+  </div>
+  <div class="num-item">
+    <h1><i class="far fa-heart"></i></h1>
+    <h1>1024</h1>
+    <h4>Happy <span style="color: red;">Users</span></h4>
+  </div>
+  <div class="num-item">
+    <h1><i class="fas fa-globe"></i></h1>
+    <h1>75</h1>
+    <h4>Expert <span style="color: red;">Workers</span></h4>
+  </div>
+</div>
+<div class="btn-content">
+  <div class="nav-buttons">
+    <div class="navbg">
+    <div id="active" class="navbtn1">Car Decoration</div>
+    <div class="navbtn1">Modifications</div>
+    <div class="navbtn1">Spare Parts</div>
+  </div>
+  </div>
+  <div class="list3">
+    <div class="list-item">
+      <img src="images/car seats.jpg">
+      <div>
+      <h4><b>Car Seats</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 10.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/engine.jpg">
+      <div>
+      <h4><b>Diesel Engine</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 7.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/keychain.jpg">
+      <div>
+      <h4><b>Stylish Key</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 20.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/filters.png">
+      <div>
+      <h4><b>Filters</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 7.00</h5>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="view-shop">
+  <div class="viewbtn" style="text-align: left;"><button class="settings2" style="height: 30px;width: 30px;"><i class="fas fa-cog"></i></button></div>
+  <br>
+  <h2 style="color: orange;">WE ARE SINCE 1970</h2>
+  <h1 style="color: white;">WE PROVIDE WHAT YOU WANT</h1>
+  <button id="b1">CONTACT US</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="b2">VIEW SHOP</button>
+</div>
+<div class="fresh">
+  <div class="freshtitle"><h2>Fresh <span style="color: red;">Items</span></h2><hr style="background: black;" class="hr1"><hr class="hr2">
+  <p style="color: rgb(94, 94, 94);">Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico ut debet consecutur.</p></div>
+  <br>
+  <div class="list1">
+    <div class="list-item">
+      <img src="images/car seats.jpg">
+      <div>
+      <h4><b>Car Seats</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 10.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/wheel rim.jpg">
+      <div>
+      <h4><b>Car Wheel Rim</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 18.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/car LCD.jpg">
+      <div>
+      <h4><b>Car LCD</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 7.00</h5>
+    </div>
+    </div>
+    <div class="list-item">
+      <img src="images/filters.png">
+      <div>
+      <h4><b>Filters</b></h4>
+      <ul class="stars">
+        <li class="stars-item active" data-rate="1"></li>
+        <li class="stars-item" data-rate="2"></li>
+        <li class="stars-item" data-rate="3"></li> 
+        <li class="stars-item" data-rate="4"></li>
+        <li class="stars-item" data-rate="5"></li>
+        <li style="padding-top: 5px;">&nbsp;(0 reviews)</li>       
+      </ul>
+      <h5>&#163; 7.00</h5>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="review">
+  <div class="reviews">
+    <h3>VERY QUICK AND FAST SUPPORT</h3>
+    <p>Lorem ipsum dolor sit amet consecutur adipi-<br>sicning elitsed eiusmod tempor enim enim veniam<br> quis notru.</p>
+    <div class="rev-name">
+      <div><img src="people/mark.jpg"></div>
+      <div style="padding-left:20px;">
+        <p><b>Mark Zuckersberg</b><br>
+          CEO Facebook
+          <ul class="stars1">
+            <li class="stars1-item " data-rate="1"></li>
+            <li class="stars1-item" data-rate="2"></li>
+            <li class="stars1-item" data-rate="3"></li> 
+            <li class="stars1-item active" data-rate="4"></li>
+            <li class="stars1-item" data-rate="5"></li>       
+          </ul>
+        </p>
+      </div>
+      <div class="quote" style="margin-left: 40px;">
+        <i class="fas fa-quote-right"></i>
+      </div>
+    </div>
+  </div>
+  <div class="reviews">
+    <h3>DONE IN 20 DAYS! AWESOME</h3>
+    <p>Lorem ipsum dolor sit amet consecutur adipi-<br>sicning elitsed eiusmod tempor enim enim veniam<br> quis notru.</p>
+    <div class="rev-name">
+      <div><img src="people/sundar.jpg"></div>
+      <div style="padding-left:20px;">
+        <p><b>Sundar Pichai</b><br>
+        CEO Google
+        <ul class="stars1">
+          <li class="stars1-item " data-rate="1"></li>
+          <li class="stars1-item" data-rate="2"></li>
+          <li class="stars1-item" data-rate="3"></li> 
+          <li class="stars1-item" data-rate="4"></li>
+          <li class="stars1-item active" data-rate="5"></li>       
+        </ul>
+      </p>
+      </div>
+      <div class="quote" style="margin-left: 75px;">
+        <i class="fas fa-quote-right"></i>
+      </div>
+    </div>
+  </div>
+  <div class="reviews">
+    <h3>JUST FABULOUS THEME</h3>
+    <p>Lorem ipsum dolor sit amet consecutur adipi-<br>sicning elitsed eiusmod tempor enim enim veniam<br> quis notru.</p>
+    <div class="rev-name">
+      <div><img src="people/amazon.jpg"></div>
+      <div style="padding-left:20px;">
+        <p><b>Mark Bezos</b><br>
+          CEO Amazon
+          <ul class="stars1">
+            <li class="stars1-item " data-rate="1"></li>
+            <li class="stars1-item" data-rate="2"></li>
+            <li class="stars1-item active" data-rate="3"></li> 
+            <li class="stars1-item " data-rate="4"></li>
+            <li class="stars1-item" data-rate="5"></li>       
+          </ul>
+        </p>
+      </div>
+      <div class="quote" style="margin-left: 80px;">
+        <i class="fas fa-quote-right"></i>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<div class="last" style="margin-top: 0;">
+  <div class="lasttitle"><h2>Latest <span style="color: red;">Blog</span> Post</h2><hr style="background: black;" class="hr1"><hr class="hr2">
+  <p>Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico ut debet<br>consecutur</p></div>
+  <div class="last-cmts">
+    <div class="last1">
+      <img src="images/not_available.jpg">
+      <div id="kohli"><img src="people/kohli.jpg"></div>
+      <br>
+      <p style="padding-left: 10px; color: rgb(124, 124, 124);">June 30,2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 comments</p>
+      <p style="padding-left: 10px;" >Ford Focus Production for North America will cease for a Year</p>
+    </div>
+    <div class="last1">
+      <img src="images/not_available.jpg">
+      <div id="kohli"><img src="people/kohli.jpg"></div>
+      <br>
+      <p style="padding-left: 10px; color: rgb(124, 124, 124);">June 30,2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 comments</p>
+      <p style="padding-left: 10px;" >Ford Focus Production for North America will cease for a Year</p>
+    </div>
+    <div class="last1">
+      <img src="images/not_available.jpg">
+      <div id="kohli"><img src="people/kohli.jpg"></div> 
+      <br>
+      <p style="padding-left: 10px; color: rgb(124, 124, 124);">June 30,2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 comments</p>
+      <p style="padding-left: 10px;" >Ford Focus Production for North America will cease for a Year</p>
+    </div>
+
+  </div>
+</div>
+<div class="companies">
+  <div style="padding-top: 50px; margin-left: 75px;">
+    
+    <h3><i>Why Choose Us</i></h3>
+    <h2><b>OUR PREMIUM CLIENTS</b></h2>
+  </div>
+  <div class="comp-logos">
+    <div><img src="images/comp1.jpg"></div>
+    <div><img src="images/comp2.jpg"></div>
+    <div><img src="images/comp3.jpg"></div>
+    <div><img src="images/comp4.jpg"></div>
+    <div><img src="images/comp5.jpg"></div>
+  </div>
+
+</div>
+<div class="footer">
+  <div class="foot1">
+    <h2><img src="logo.png"  class="logo1"></h2>
+    <p style="color: rgb(94, 94, 94);">Lorem ipsum dolor sit amet, consecutur adipiscing elit. Curabitur et dolor eget erat fringilla port.
+    </p>
+    <img id="app" src="images/playstore.png">&nbsp;&nbsp;<img id="app" src="images/appstore.jpg">
+  </div>
+  <div class="foot2">
+    <table>
+      <col width="150px">
+      <col width="200px">
+      <col width="400px">
+      <tr>
+        <th>Follow Us</th>
+        <th>Quick Links</th>
+        <th>SignUp for Weekly Newsletter</th>
+      </tr>
+      <tr>
+        <td><img src="logos/fb.png">&nbsp;&nbsp;Facebook</td>
+        <td>About Us</td>
+        <td rowspan="2">We May send you information about related events, webinars, <br>products and services which we believe.</td>
+      </tr>
+      <tr>
+        <td><img src="logos/twitter.png">&nbsp;&nbsp;Twitter</td>
+        <td>Our services</td>
+      </tr>
+      <tr>
+        <td><img src="logos/li.png">&nbsp;&nbsp;Linkedin</td>
+        <td>Blog</td>
+        <td rowspan="2"><input placeholder="Enter your email address"><button>SUBMIT</button></td>
+      </tr>
+      <tr>
+        <td><img src="logos/gplus.png">&nbsp;&nbsp;Google</td>
+        <td>Support Center</td>
+      </tr>
+      <tr>
+      <td style="vertical-align: top;"><img src="logos/yt.png">&nbsp;&nbsp;Youtube</td>
+      <td></td>
+      <td>Copyright 2017 <i class="far fa-copyright"></i> Theme Created by <span style="color: red;">ScriptsBundle</span> All Rights<br>Reserved.</td>
+      </tr>
+    
+    </table>
+
+  </div>
+  
+</div>
+<img style="width: 100%; height:20vh" src="images/city.jpg">
+
+</body>
+</html>
